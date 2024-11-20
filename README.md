@@ -25,11 +25,11 @@ npx create-turbo@latest -e design-system
 
 ### Useful Commands
 
-- `pnpm build` - Build all packages, including the Storybook site
-- `pnpm dev` - Run all packages locally and preview with Storybook
-- `pnpm lint` - Lint all packages
-- `pnpm changeset` - Generate a changeset
-- `pnpm clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
+- `npm build` - Build all packages, including the Storybook site
+- `npm run dev` - Run all packages locally and preview with Storybook
+- `npm run lint` - Lint all packages
+- `npm run changeset` - Generate a changeset
+- `npm run clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
 
 ## Turborepo
 
