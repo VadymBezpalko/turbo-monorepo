@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@text/product-switcher/button";
+import { ProductSwitcher } from "@text/product-switcher";
 
-const meta: Meta<typeof Button> = {
-  component: Button,
+const meta: Meta<typeof ProductSwitcher> = {
+  component: ProductSwitcher,
   argTypes: {
     type: {
       control: { type: "radio" },
@@ -13,7 +13,7 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof ProductSwitcher>;
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -22,7 +22,7 @@ type Story = StoryObj<typeof Button>;
  */
 export const Primary: Story = {
   render: (props) => (
-    <Button
+    <ProductSwitcher
       {...props}
       onClick={(): void => {
         // eslint-disable-next-line no-alert -- alert for demo
@@ -30,7 +30,7 @@ export const Primary: Story = {
       }}
     >
       Hello
-    </Button>
+    </ProductSwitcher>
   ),
   name: "Button",
   args: {
